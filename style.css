@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+/* Header CSS Start */
+header{
+  box-shadow: 0 .1rem 1rem rgb(210, 200, 200);
+}
+header ul li a:after{
+	content: "";
+	position: absolute;
+	background-color: rgb(154, 186, 14);
+	height: 2px;
+	width: 0;
+	left: 10px;
+	bottom: -10px;
+	transition: 0.3s;
+}
+header ul li a:hover:after{
+	width: 75%;
+	height: 2px;
+  
+}
+header ul li a:hover{
+  color: #ffff00;
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    
+}
+.right ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+}
+.left{
+    font-size: 1.5rem;
+}
+/* Header CSS End */
+
+ /* Main Section CSS Start  */
+ .firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+ }
+ .firstsection div{
+    width: 30%;
+ }
+ .leftsection{
+    font-size: 2rem;
+    margin: 30px 0;
+    line-height: 50px;
+ }
+ .rightsection img{
+    width: 80%;
+
+ }
+ .yellow{
+    color: rgb(198, 231, 12);
+ }           
+   .btn-grad {
+            width: 27%;
+            height: auto;
+            font: 1.6rem;
+            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            border-radius: 10px;
+            box-shadow: 0 0 20px #eee;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 20px 0 0 0;
+      }
+      .btn-grad a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+
+      }
+      
+ /* Main Section CSS End  */
+
+ /* About Section Start */
+#Secondsection{
+  display: flex;
+  justify-content: space-evenly;  
+
+ }
+ .About-img{
+  height: 500px;
+  width: 400px;
+  margin-left: 100px;
+
+ }
+ .About-img img{
+  height: 400px;
+  width: 300px;
+  margin: 40px 40px;
+  transition:transform 1s;
+	position: relative;
+  filter: grayscale(100%);
+  
+ }
+ .About-img img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+ }
+ .About-content{
+  height: 500px;
+  width: 400px;
+  padding: 60px 0;
+  margin-right: 100px;
+ }
+ .About-content h1{
+  font-size: 55px;
+  padding-bottom: 20px;
+ }
+ .About-content h3{
+  font-size: 30px;
+  padding-bottom: 20px;
+ }
+ .About-content span{
+  color: #ffff00;
+ }
+ .About-content p{
+  font-size: 18px;
+  line-height: 33px;
+ }
+ 
+/* About Section End  */
+
+/* Skills Section start  */
+  .skills{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .skill-heading{
+    display: flex;
+    margin: 30px 0;
+    font-size: 40px;
+    justify-content: center;
+  }
+   .technical{
+    display: inline-block;
+    height: 750px;
+    width: 500px;
+
+   }
+.progress:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.bar{
+    position: relative;
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 70%;
+    }
+}
+#c-bar{
+    animation: c-fill 2s forwards;
+}
+@keyframes c-fill{
+    100%{
+        width: 80%;
+    }
+}
+#cplus-bar{
+  animation: cplus-fill 2s forwards;
+}
+@keyframes cplus-fill{
+  100%{
+      width: 82%;
+  }
+}
+#java-bar{
+  animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+  100%{
+      width: 70%;
+  }
+}
+#python-bar{
+  animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+  100%{
+      width: 68%;
+  }
+}
+#csharp-bar{
+  animation: csharp-fill 2s forwards;
+}
+@keyframes csharp-fill{
+  100%{
+      width: 70%;
+  }
+}
+
+.tech{
+  font-size: 30px;
+  padding: 40px 100px;
+
+ }
+   .professonial{
+    display: inline-block;
+    height: 750px;
+    width: 500px;
+
+    /* Circular progressbar */
+    @keyframes progress {
+      0% { --percentage: 0; }
+      100% { --percentage: var(--value); }
+    }
+    
+    @property --percentage {
+      syntax: '<number>';
+      inherits: true;
+      initial-value: 0;
+    }
+    
+    [role="progressbar"] {
+      --percentage: var(--value);
+      --primary: #369;
+      --secondary: #adf;
+      --size: 150px;
+      animation: progress 2s 0.5s forwards;
+      width: var(--size);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+    }
+    
+    [role="progressbar"]::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+      mask: radial-gradient(white 55%, transparent 0);
+      mask-mode: alpha;
+      -webkit-mask: radial-gradient(#0000 55%, #000 0);
+      -webkit-mask-mode: alpha;
+    }
+    
+    [role="progressbar"]::after {
+      counter-reset: percentage var(--value);
+      content: counter(percentage) '%';
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: calc(var(--size) / 5);
+      color: var(--primary);
+    }
+    
+   }
+
+   .professonial-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+   }
+   .professonial-top h1{
+    padding-top: 5px;
+
+   }
+   .professonial-top div{
+    line-height: 50px;
+
+   }
+   .professonial-buttom div{
+    line-height: 50px;
+
+   }
+   .professonial-buttom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 25px;
+    
+   }
+   .professonial-buttom h1{
+    padding-top: 5px;
+
+   }
+   .pbh2{
+    padding-left:20px ;
+
+   }
+   .pbh4{
+    padding-left:20px ;
+
+   }
+   /* Skills Section End  */
+   
+   /* Contact Section First  */
+   
+   .contact{
+    display: flex;
+    justify-content: space-evenly;
+    
+   }
+   .Contact-img{
+    height: 500px;
+    width: fit-content;
+    margin: 20px 0;
+  
+   }
+   .contact-detail-label{
+    width: fit-content;
+   }
+   .contact-detail{
+    width: fit-content;
+    padding-left: 30px;
+
+   }
+  
+   .contact-form{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 35px 40px;
+   }
+
+   .contact-item{
+    list-style-type: none;
+    line-height: 60px;
+   }
+   .contact-left{
+    font-weight: 800;
+    font-size: 18px;
+   }
+   .contactright{
+    font-weight: 400;
+    font-size: 18px;
+    color:gray;
+    padding-left: 20px;
+   }
+
+   /* Contact Section End  */
+
+   /* Social media */
+   .social-media{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    font-size: 35px;
+   }
+   .social-media a{
+    text-decoration: none;
+    color: #ffffff;
+   }
+   .push{
+    text-align: center;
+   }
+   .push-hr{
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 20px;
+   }
+
+
+
+   
